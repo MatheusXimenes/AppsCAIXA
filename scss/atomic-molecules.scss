@@ -1,0 +1,10 @@
+/* Auxiliar Classes */
+
+.img-responsible-height { width: 100%; height: auto;}
+.img-responsible-width {width: auto; height: 100%;}
+.margin-auto {margin:0 auto;}
+.container {margin:0 4%;}
+
+/** Main Classes **/
+.btn-caixa {width:100%; padding:15px 10%; background: $color-orange-dark; color: $color-white; margin-bottom: $margin-bottom-medium;}
+.btn-material-d {width:100%; padding:15px 10%; background: $color-orange-dark; color: $color-white; margin-bottom: $margin-bottom-medium;}

@@ -1,0 +1,208 @@
+/**
+Website: Practical Test - CAIXA Apps
+Description: CAIXA Apps responsible website
+Author: Matheus Ximenes
+Author URL: https://br.linkedin.com/in/matheusximenes
+Tags: Sass, Responsible, Mixins, Atomic Design, Mobile First
+*/
+/*
+ Atoms
+*/
+button {
+  border: 0px; }
+
+ul {
+  padding-left: 0px; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+input[type=text],
+input[type=text]::placeholder,
+input[type=password],
+select,
+textarea {
+  font-family: "Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  padding: 5px 0;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  margin-bottom: 5px; }
+
+body {
+  font-family: "Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #016db8;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#016db8), to(#0191d4));
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-linear-gradient(top, #016db8, #0191d4);
+  /* Safari 5.1, Chrome 10+ */
+  background: -moz-linear-gradient(top, #016db8, #0191d4);
+  /* Firefox 3.6+ */
+  background: -ms-linear-gradient(top, #016db8, #0191d4);
+  /* IE 10 */
+  background: -o-linear-gradient(top, #016db8, #0191d4);
+  /* Opera 11.10+ */ }
+
+/* Auxiliar Classes */
+.img-responsible-height, .apps-list .app-front .app-img img {
+  width: 100%;
+  height: auto; }
+
+.img-responsible-width {
+  width: auto;
+  height: 100%; }
+
+.margin-auto {
+  margin: 0 auto; }
+
+.container {
+  margin: 0 4%; }
+
+/** Main Classes **/
+.btn-caixa {
+  width: 100%;
+  padding: 15px 10%;
+  background: #f98f14;
+  color: #fff;
+  margin-bottom: 20px; }
+
+.btn-material-d {
+  width: 100%;
+  padding: 15px 10%;
+  background: #f98f14;
+  color: #fff;
+  margin-bottom: 20px; }
+
+/****************** Header ******************/
+.main-header {
+  text-align: center; }
+
+.main-logo {
+  width: 200px;
+  margin: 10px auto; }
+
+.main-header .main-nav {
+  display: none; }
+
+.breadcrumb {
+  margin-bottom: 30px;
+  text-align: center; }
+
+.breadcrumb h1 {
+  font-size: 1rem;
+  margin: 0 2%; }
+
+.hero-display {
+  background-color: #fff;
+  padding: 10px 4%;
+  color: #016db8;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.hero-display h2 {
+  line-height: 1.3rem;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #f8a23d; }
+
+.hero-display span {
+  color: #f8a23d;
+  font-size: .8rem;
+  display: block; }
+
+.hero-display .app-img-display {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  text-align: center; }
+
+.hero-display .app-img-display img {
+  width: 100%;
+  height: auto; }
+
+.hero-display .app-img-display img:last-child {
+  display: none; }
+
+/* Apps List */
+.apps-list .app-front {
+  background-color: #1893b2;
+  padding: 0 2% 10px 2%;
+  margin-bottom: 20px;
+  border: 1px solid #fff; }
+
+.apps-list .app-front h2 {
+  background-color: #fff;
+  color: #016db8;
+  padding: 10px 0;
+  margin-left: -2%;
+  font-size: 0.8rem;
+  width: 87%;
+  position: absolute;
+  text-align: center; }
+
+.apps-list .app-front .app-img {
+  margin-top: 50px;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  text-align: center; }
+
+.apps-list .app-back {
+  display: none; }
+
+.footer {
+  background-color: #016db8;
+  border: 1px solid #fff;
+  border: 1px 0px; }
+
+.footer h2 {
+  font-size: 1.1rem; }
+
+.footer .other-products-list {
+  padding: 10px 5%;
+  text-align: center; }
+
+.footer .contacts-list {
+  padding: 10px 5%;
+  text-align: center; }
+
+.footer .other-products-list li h3, .footer .contacts-list h3 {
+  color: #f8a23d;
+  font-size: 1.1rem;
+  margin: 0px; }
+
+.footer .other-products-list li p, .footer .contacts-list p {
+  margin: 5px 0px 20px 0px; }
+
+.footer .min-logo {
+  background-color: #1893b2; }
+
+/* Medium */
+@media screen and (min-width: 680px) and (max-width: 980px) {
+  .mian-header {
+    display: flex; }
+
+  .mian-header .btn-caixa {
+    width: 20%; }
+
+  .main-nav {
+    display: flex; }
+
+  .apps-list {
+    display: flex; }
+
+  .hero-display .app-img-display img:last-child {
+    display: block; } }
+/* Larger */
+
+/*# sourceMappingURL=stylesheet.css.map */

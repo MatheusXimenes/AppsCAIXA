@@ -1,0 +1,38 @@
+//Bosons
+
+//1. Main Colors
+$color-blue-dark: #016db8;
+$color-blue-light: #0191d4;
+$color-blue-green: #1893b2;
+$color-orange-dark: #f98f14;
+$color-orange-light: #f8a23d;
+$color-white: #fff;
+$color-black:#000;
+$color-gray:#ccc;
+
+//2. Main Backgrounds
+$background-blue: $color-blue-dark, $color-blue-light;
+$background-gray: $color-white, $color-gray;
+
+//3. Pages Sizes
+$small:320px; //Iphone 5
+$small-portrait:568px; //Iphone 5 Portrait
+$medium:768px; //Ipad
+$larger:1024px; //Ipad Portrait
+
+//4. Font & Families
+$font-size-default: 1rem;
+$font-size-small: 0.8rem;
+$font-size-larger: 1.2rem;
+$font-family: "Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$font-family-bold: "Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+//5. Margins $ Paddings
+$margin-bottom-large: 30px;
+$margin-bottom-medium: 20px;
+$margin-bottom-small: 10px;
+$margin-bottom-smaller: 5px;
+$padding-page-small:5%;
+$padding-page-medium:2%;
+
+//5. Other Stuffs

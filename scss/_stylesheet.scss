@@ -1,0 +1,16 @@
+/**
+Website: Practical Test - CAIXA Apps
+Description: CAIXA Apps responsible website
+Author: Matheus Ximenes
+Author URL: https://br.linkedin.com/in/matheusximenes
+Tags: Sass, Responsible, Mixins, Atomic Design, Mobile First
+*/
+
+//Sass Guidelines
+@import "_util-mixins.scss";
+
+//Atomic Design
+@import 'atomic-bosons.scss';
+@import 'atomic-atoms.scss';
+@import 'atomic-molecules.scss'; 
+@import 'atomic-organisms.scss';

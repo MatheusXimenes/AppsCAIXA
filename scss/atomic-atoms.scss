@@ -1,0 +1,46 @@
+/*
+ Atoms
+*/
+
+//Base
+button {border:0px;}
+ul {padding-left: 0px;}
+li {list-style: none;}
+a  {color:$color-white; text-decoration: none;}
+
+//Inputs
+input[type=text],
+input[type=text]::placeholder,
+input[type=password],
+select,
+textarea
+{
+    font-family: $font-family;
+    font-size: $font-size-default;
+    color: $color-white;
+    padding:5px 0;
+    background-color: transparent;
+    border:0px;
+    border-bottom:1px solid $color-white;
+    width:100%;
+    margin-bottom: 5px;
+    
+    //Ajust for hovers
+    &:hover,
+    &:focus,
+    &:active {
+      
+    }
+}
+
+body{
+    font-family: $font-family;
+    font-size: $font-size-default;
+    color: $color-white;
+    background-color: $color-blue-dark;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color-blue-dark), to($color-blue-light)); /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-linear-gradient(top, $color-blue-dark, $color-blue-light);/* Safari 5.1, Chrome 10+ */
+    background: -moz-linear-gradient(top, $color-blue-dark, $color-blue-light);/* Firefox 3.6+ */
+    background: -ms-linear-gradient(top, $color-blue-dark, $color-blue-light);/* IE 10 */
+    background: -o-linear-gradient(top, $color-blue-dark, $color-blue-light);/* Opera 11.10+ */
+}

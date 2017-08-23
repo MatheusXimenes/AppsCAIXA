@@ -30,4 +30,9 @@
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity=#{$opacity}-ie); //IE8
 }
-
+@mixin rotate($deg){
+  -ms-transform: rotate($deg); /* IE 9 */
+  -webkit-transform: rotate($deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate($deg); 
+  transform: rotate($deg);
+}

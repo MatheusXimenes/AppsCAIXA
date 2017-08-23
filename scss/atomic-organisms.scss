@@ -1,44 +1,76 @@
 /****************** Header ******************/
 .main-header {text-align: center;}
-.main-logo {width:200px; margin: 10px auto;}
-.main-header i.fa {}
-.main-header .main-nav {display:none;}
+.main-header .main-logo {width:200px; margin: 10px auto;}
+.main-header i {display:block; @extend .padding-default; background-color: $color-white; color:$color-orange-dark;}
+.main-header .main-nav ul {padding-bottom:$margin-bottom-medium;}
+.main-header .main-nav li {border-bottom:1px solid $color-white; @extend .padding-default-small;}
+.main-header .main-nav li:last-child {border-bottom:3px solid $color-white;}
 
 .breadcrumb {margin-bottom:30px; text-align: center;}
 .breadcrumb h1 {font-size: 1rem; margin:0 2%;}
+.breadcrumb i {display: block; color:$color-orange-dark; font-size: $font-size-small; @extend .padding-default-small;}
 
-.hero-display {background-color: $color-white; padding:10px 4%; color:$color-blue-dark; text-align: center; margin-bottom:$margin-bottom-medium;}
+.hero-display {background-color: $color-white; padding:10px 4% 20px 4%; color:$color-blue-dark; text-align: center; margin-bottom:$margin-bottom-large;}
 .hero-display h2 {line-height: 1.3rem; padding-bottom: 15px; margin-bottom:$margin-bottom-smaller; border-bottom:1px solid $color-orange-light; }
 .hero-display span {color:$color-orange-light; font-size:.8rem; display: block;}
 .hero-display .app-img-display { border:1px solid $color-gray; width:100%; height: 500px; overflow: hidden; text-align: center;}
-.hero-display .app-img-display img { width: 100%; height:auto;}
+.hero-display .app-img-display img {@extend .img-responsible-width;}
 .hero-display .app-img-display img:last-child {display:none;}
 
 /* Apps List */
 .apps-list .app-front {background-color: $color-blue-green; padding:0 2% 10px 2%; margin-bottom:$margin-bottom-medium; border:1px solid $color-white;}
-.apps-list .app-front h2 {background-color: $color-white; color:$color-blue-dark; padding:10px 0; margin-left:-2%; font-size:$font-size-small; width:87%; position:absolute; text-align: center;}
+.apps-list .app-front h2 {background-color: $color-white; color:$color-blue-dark; padding:10px 0; margin-left:-2%; font-size:$font-size-small; width:92%; position:absolute; text-align: center;}
 .apps-list .app-front .app-img {margin-top:50px; width:100%; height: 220px; overflow: hidden; text-align: center;}
 .apps-list .app-front .app-img img {@extend .img-responsible-height;}
 .apps-list .app-back {display: none;}
 
 .footer {background-color: $color-blue-dark; border:1px solid $color-white; border:1px 0px;}
 .footer h2 {font-size: 1.1rem;}
-.footer .other-products-list { padding:10px 5%; text-align: center;}
-.footer .contacts-list {padding:10px 5%; text-align: center;}
+.footer .other-products-list { @extend .padding-default; text-align: center;}
+.footer .contacts-list {@extend .padding-default; text-align: center;}
 .footer .other-products-list li h3, .footer .contacts-list h3 {color:$color-orange-light; font-size: 1.1rem; margin:0px;}
 .footer .other-products-list li p, .footer .contacts-list p {margin: 5px 0px 20px 0px;}
-.footer .min-logo {background-color: $color-blue-green;};
+.footer .min-logo {background-color: $color-blue-green; border-top:1px solid #fff; text-align: center;};
 
 /* Medium */
-@media screen and (min-width: 680px) and (max-width: 980px) {
-    .mian-header {display: flex;}
-    .mian-header .btn-caixa {width:20%;}
-    .main-header .main-logo {}
-    .main-nav {display:flex;}
+@media screen and (min-width: $screen-medium) and (max-width: $screen-larger) {
+    
+    /* Header */
+    .main-header .btn-caixa {width:auto;}
+    .main-header .main-logo { position:absolute; top:0px; }
+    .main-header i.fa-bars {display:none;}
+    .main-header i.fa-search {color:$color-white; background-color: transparent; padding-top:0; }
+    .main-header .main-nav ul {display:flex; width:100%;}
+    .main-header .main-nav ul li {border:0px; padding:0 2%;}
+    .main-header .main-nav ul li:last-child {border:0px;}
+    
+    /*Breadcrumb */
+    .breadcrumb {text-align: left;}
+    .breadcrumb i {display:inline; padding:5px 2%; @include rotate(90deg);}
+    .breadcrumb h1 {display:inline; margin: 0px;}
+
+    /* Hero Display */
+    .hero-display {padding:20px 2%;}
+    .hero-display h2 {margin-top:50px;}
+    .hero-display li {padding-bottom:10px;}
+    .hero-display .column {width:50%; margin-right:2%;}
+    .hero-display .column .btn-caixa {margin-top:184px; margin-bottom: 0px;}
+    .hero-display .column:last-child {width:50%; margin-right:0%;}
+    
+    /* Search Apps*/
+    .search-apps {display:flex;}
+    .search-apps input[type=text] {border:0px;}
+    .search-apps .btn-material-d {background-color: $color-blue-dark; width:45px; height:45px; padding:15px; @include border-radius(30px);}
+    .search-apps .btn-material-d i {display:block; color:$color-white;}
+    .search-apps .btn-material-d span {display:none;}
+
+    /* AppList */
     .apps-list {display:flex;}
-    .hero-display .app-img-display img:last-child { display:block;}
+    .apps-list .app-itens {Width:50%; margin-right:2%;}
+
+    
 }
 
 /* Larger */
-@media screen and (min-width: 981px) {
+@media screen and (min-width: $screen-larger) {
 }

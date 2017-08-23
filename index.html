@@ -19,19 +19,23 @@
         
         <!-- Start - MainHeader -->
         <header class="main-header">
-            <button class="btn-caixa main-shadown">INTERNET BANKING</button>
-            <img src="img/logo-caixa.png" alt="logo CAIXA ECONOMICA FEDERAL" class="main-logo margin-auto">
-            <i class="fa fa-bars"></i>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="" title="">PARA TRABALHADORES</a></li>
-                    <li><a href="" title="">PROGRAMAS SOCIAIS</a></li>
-                    <li><a href="" title="">LOTERIAS CAIXA</a></li>
-                    <li><a href="" title="">HABITAÇÃO</a></li>
-                    <li><a href="" title="">APPS</a></li>
-                    <li><a href="" title="">SEARCH</a></li>
-                </ul>
-            </nav>
+            <div class="row flex-end">
+                <button class="btn-caixa main-shadown">INTERNET BANKING</button>
+            </div>
+            <div class="row">
+                <img src="img/logo-caixa.png" alt="logo CAIXA ECONOMICA FEDERAL" class="main-logo margin-auto">
+                <i class="fa fa-bars"></i>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="" title="">PARA TRABALHADORES</a></li>
+                        <li><a href="" title="">PROGRAMAS SOCIAIS</a></li>
+                        <li><a href="" title="">LOTERIAS CAIXA</a></li>
+                        <li><a href="" title="">HABITAÇÃO</a></li>
+                        <li><a href="" title="">APPS</a></li>
+                        <li><a href="" title=""><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- End - MainHeader -->
 
@@ -39,25 +43,34 @@
 
             <!-- BreadCrumb -->
             <section class="breadcrumb">
-                    <span> <a href="">Pagina Principal</a><i class="fa fa-search"></i><a href=""><h1>Apps CAIXA</h1></a> </span>
+                    <span> <a href="">Pagina Principal</a><i class="fa fa-chevron-down"></i><a href=""><h1>Apps CAIXA</h1></a> </span>
             </section>
             
             <!-- HeroDisplay -->
             <section class="hero-display main-shadown">
-                <h2><span>NOVO</span> APP CAIXA <br/> TRABALHADORES</h2>
-                <div class="list-display">
-                    <ul class="hero-display-itens">
-                        <li>Agende suas Tarefas</li>
-                        <li>Verifique seu Extrato Digital</li>
-                        <li>Agende sua visita na Agência</li>
-                        <li>Confira sua pontuação</li>
-                    </ul>
-                    <button class="btn-caixa">Veja mais do APP</button>
+                <div class="row">
+                    <div class="column">
+                        <div>
+                            <h2><span>NOVO</span> APP CAIXA <br/> TRABALHADORES</h2>
+                            <ul class="hero-display-itens">
+                                <li>Agende suas Tarefas</li>
+                                <li>Verifique seu Extrato Digital</li>
+                                <li>Agende sua visita na Agência</li>
+                                <li>Confira sua pontuação</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="btn-caixa">Veja mais do APP</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="app-img-display">
+                                <img src="img/display1.jpg" alt="Apps Trabalhadores" >
+                                <img src="img/display2.jpg" alt="Apps Trabalhadores" >
+                        </div>
+                    </div>
                 </div>
-                <div class="app-img-display">
-                        <img src="img/display1.jpg" alt="Apps Trabalhadores" >
-                        <img src="img/display2.jpg" alt="Apps Trabalhadores" >
-                </div>
+                
                 
             </section>
             
@@ -65,7 +78,7 @@
             <section class="search-apps">
                 <label for=""></label>
                 <input type="text" placeholder="PESQUISAR POR MAIS APPS CAIXA">
-                <button class="btn-material-d"><i class="fa fa-searc"></i> PESQUISAR</button>
+                <button class="btn-material-d"><i class="fa fa-search"></i><span> PESQUISAR </span></button>
             </section>
             
 

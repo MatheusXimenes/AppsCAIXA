@@ -15,10 +15,10 @@ $background-blue: $color-blue-dark, $color-blue-light;
 $background-gray: $color-white, $color-gray;
 
 //3. Pages Sizes
-$small:320px; //Iphone 5
-$small-portrait:568px; //Iphone 5 Portrait
-$medium:768px; //Ipad
-$larger:1024px; //Ipad Portrait
+$screen-small:320px; //Iphone 5
+$screen-small-portrait:568px; //Iphone 5 Portrait
+$screen-medium:680px; //Ipad
+$screen-larger:1024px; //Ipad Portrait
 
 //4. Font & Families
 $font-size-default: 1rem;

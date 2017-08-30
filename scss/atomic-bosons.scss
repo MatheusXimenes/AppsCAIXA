@@ -15,15 +15,17 @@ $background-blue: $color-blue-dark, $color-blue-light;
 $background-gray: $color-white, $color-gray;
 
 //3. Pages Sizes
-$screen-small:320px; //Iphone 5
+$screen-small:310px; //Iphone 5
 $screen-small-portrait:568px; //Iphone 5 Portrait
 $screen-medium:680px; //Ipad
-$screen-larger:1024px; //Ipad Portrait
+$screen-larger:900px; //Ipad Portrait
+$screen-largest:1200px; //Ipad Portrait
 
 //4. Font & Families
 $font-size-default: 1rem;
 $font-size-small: 0.8rem;
 $font-size-larger: 1.2rem;
+$font-size-largest: 1.6rem;
 $font-family: "Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 $font-family-bold: "Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 

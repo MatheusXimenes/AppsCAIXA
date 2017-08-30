@@ -6,7 +6,7 @@
 button {border:0px;}
 ul {padding-left: 0px;}
 li {list-style: none;}
-a  {color:$color-white; text-decoration: none;}
+a  {color:$color-white; text-decoration: none; padding-bottom:10px;}
 
 //Inputs
 input[type=text],
@@ -44,3 +44,4 @@ body{
     background: -ms-linear-gradient(top, $color-blue-dark, $color-blue-light);/* IE 10 */
     background: -o-linear-gradient(top, $color-blue-dark, $color-blue-light);/* Opera 11.10+ */
 }
+

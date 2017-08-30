@@ -110,10 +110,12 @@
 
     /* Header */
     .main-header .nav-logo {display: flex;}
-    .main-header .main-logo { flex:3; position:relative; top:-20px; flex-shrink: 0;}
-    .main-header nav ul {justify-content: flex-start; margin-bottom:0;}
-    .main-header nav ul li:nth-child(1), .main-header nav ul li:nth-child(2), .main-header nav ul li:nth-child(3)  {flex:2;}
-    .main-header .main-logo img {flex-basis:250px; height:60px;}
+    .main-header .main-logo { flex:3; position:relative; top:-20px; left:-0.5%; width:250px; height:87px;}
+    .main-header nav ul {justify-content: flex-start; margin-bottom:0; padding:0px;}
+    .main-header nav ul li {padding:0;}
+    .main-header nav ul li:nth-child(1), .main-header nav ul li:nth-child(2), {flex:2.5;}
+    .main-header nav ul li:nth-child(3)  {flex:2;}
+    
     
     /* Class Container */
     .container {margin:0 auto; max-width:$screen-largest;}

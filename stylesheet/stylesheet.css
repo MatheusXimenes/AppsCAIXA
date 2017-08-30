@@ -53,6 +53,9 @@ body {
   background: -o-linear-gradient(top, #016db8, #0191d4);
   /* Opera 11.10+ */ }
 
+button {
+  cursor: pointer; }
+
 /* Auxiliar Classes */
 .img-responsible-height, .apps-list .app-front .app-img img {
   width: 100%;
@@ -102,6 +105,9 @@ body {
 /* Main Classes */
 .current {
   border-bottom: 3px solid #f98f14 !important; }
+
+.min-logo img {
+  widows: 200px; }
 
 /****************** Header ******************/
 .main-header {
@@ -395,18 +401,23 @@ body {
     flex: 3;
     position: relative;
     top: -20px;
-    flex-shrink: 0; }
+    left: -0.5%;
+    width: 250px;
+    height: 87px; }
 
   .main-header nav ul {
     justify-content: flex-start;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding: 0px; }
 
-  .main-header nav ul li:nth-child(1), .main-header nav ul li:nth-child(2), .main-header nav ul li:nth-child(3) {
+  .main-header nav ul li {
+    padding: 0; }
+
+  .main-header nav ul li:nth-child(1), .main-header nav ul li:nth-child(2) {
+    flex: 2.5; }
+
+  .main-header nav ul li:nth-child(3) {
     flex: 2; }
-
-  .main-header .main-logo img {
-    flex-basis: 250px;
-    height: 60px; }
 
   /* Class Container */
   .container {
